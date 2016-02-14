@@ -1,0 +1,42 @@
+svg { background: rgba(0, 0, 0, 0); font-family: Arial, Helvetica, san-serif; font-size: 10px; pointer: default; }
+rect { fill: rgba(0, 0, 0, 0.04); }
+g.ticks { stroke: #000000; stroke-width: 1px; }
+line { shape-rendering: crispEdges; }
+g.labels text { fill: #999999; }
+g.reference-lines { stroke: rgba(0, 0, 0, 0.08); }
+
+g.labels.top    { dominant-baseline: auto;    text-anchor: middle; }
+g.labels.right  { dominant-baseline: central; text-anchor: start; }
+g.labels.bottom { dominant-baseline: hanging; text-anchor: middle; }
+g.labels.left   { dominant-baseline: central; text-anchor: end; }
+
+rect.brushing-rectangle { opacity: 0; }
+
+path.line { fill: none; stroke: rgba(0, 0, 0, 1); }
+path.area { fill: rgba(0, 0, 0, 1); stroke: none; opacity: 0.05; }
+
+line.cursor { stroke: rgba(0, 0, 0, 1); opacity: 0.4; }
+line.cursor.compared,
+path.compared { stroke-dasharray: 2, 2; opacity: 0.5; }
+
+text.axis-label { fill: #999999; text-anchor: middle; dominant-baseline: central; }
+
+text.title { dominant-baseline: hanging; }
+text.title.right { text-anchor: end; }
+
+line.y.cursor,
+.y path.line { stroke: rgba(237, 0, 28, 1); }
+.y path.area,
+.y text.title  { fill: rgba(237, 0, 28, 1); }
+
+line.x.cursor,
+.x path.line { stroke: rgba(0, 108, 240, 1); }
+.x path.area,
+.x text.title  { fill: rgba(0, 108, 240, 1); }
+
+line.v.cursor,
+.v path.line { stroke: rgba(184, 0, 245, 1); }
+.v path.area,
+.v text.title  { fill: rgba(184, 0, 245, 1); }
+
+line.v.cursor.compared { stroke-dasharray: 2.5, 2.5; shape-rendering: geometricPrecision; }

@@ -1,0 +1,25 @@
+{
+  "name": "orthograph-example",
+  "author": "Justin Mimbs <justin.mimbs@gmail.com>",
+  "description": "Example of an orthographic presentation for data in 3 dimensions",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/justinmimbs/orthograph-example.git"
+  },
+  "dependencies": {
+    "react": "0.14.x",
+    "react-dom": "0.14.x",
+    "ramda": "0.19.x"
+  },
+  "devDependencies": {
+    "babel-core": "6.x.x",
+    "babel-loader": "6.x.x",
+    "babel-preset-es2015": "6.x.x",
+    "webpack": "1.x.x",
+    "webpack-dev-server": "1.x.x"
+  },
+  "scripts": {
+    "build": "BUILD_ENV=production webpack",
+    "dev": "BUILD_ENV=development webpack-dev-server --content-base build/"
+  }
+}
