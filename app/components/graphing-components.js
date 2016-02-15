@@ -217,6 +217,7 @@ CenteredText.propTypes = {
 var BrushingRectangle = React.createClass({
         displayName: "BrushingRectangle",
         propTypes: {
+            className: React.PropTypes.string,
             xRange: React.PropTypes.arrayOf(React.PropTypes.number).isRequired,
             yRange: React.PropTypes.arrayOf(React.PropTypes.number).isRequired,
             xRangeClamp: React.PropTypes.arrayOf(React.PropTypes.number),
@@ -257,8 +258,9 @@ var BrushingRectangle = React.createClass({
         },
         render: function () {
             var props = this.props,
-                rect = rectFromRanges(props.xRange, props.yRange);
-            return React.DOM.rect(Object.assign({ref: "rect", className: "brushing-rectangle", onMouseDown: this.handleMouseDown}, rect));
+                rect = rectFromRanges(props.xRange, props.yRange),
+                className = ["brushing-rectangle", props.className].filter(x => x).join(" ");
+            return React.DOM.rect(Object.assign({ref: "rect", className: className, onMouseDown: this.handleMouseDown}, rect));
         }
     });
 

@@ -135,6 +135,7 @@ var PanelLayout = React.createClass({
                 // scroll y
                 React.DOM.g({transform: translate([gutter.width + distance(x.range), gutter.height * 2 + distance(z.range)])},
                     React.createElement(BrushingRectangle, {
+                        className: "vertical",
                         xRange: [0, gutter.width],
                         yRange: [0, distance(y.viewRange)],
                         xRangeClamp: [0, 0],

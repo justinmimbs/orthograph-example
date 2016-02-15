@@ -1,5 +1,4 @@
 svg { background: rgba(0, 0, 0, 0); font-family: Arial, Helvetica, san-serif; font-size: 10px; pointer: default; }
-rect { fill: rgba(0, 0, 0, 0.04); }
 g.ticks { stroke: #000000; stroke-width: 1px; }
 line { shape-rendering: crispEdges; }
 g.labels text { fill: #999999; }
@@ -10,7 +9,8 @@ g.labels.right  { dominant-baseline: central; text-anchor: start; }
 g.labels.bottom { dominant-baseline: hanging; text-anchor: middle; }
 g.labels.left   { dominant-baseline: central; text-anchor: end; }
 
-rect.brushing-rectangle { opacity: 0; }
+rect.brushing-rectangle { opacity: 0; cursor: crosshair; }
+rect.brushing-rectangle.vertical { cursor: ns-resize; }
 
 path.line { fill: none; stroke: rgba(0, 0, 0, 1); }
 path.area { fill: rgba(0, 0, 0, 1); stroke: none; opacity: 0.05; }
