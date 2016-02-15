@@ -10,7 +10,7 @@ g.labels.bottom { dominant-baseline: hanging; text-anchor: middle; }
 g.labels.left   { dominant-baseline: central; text-anchor: end; }
 
 rect.brushing-rectangle { opacity: 0; cursor: crosshair; }
-rect.brushing-rectangle.vertical { cursor: ns-resize; }
+rect.brushing-rectangle.vertical:hover { opacity: 0.05; cursor: ns-resize; }
 
 path.line { fill: none; stroke: rgba(0, 0, 0, 1); }
 path.area { fill: rgba(0, 0, 0, 1); stroke: none; opacity: 0.05; }
