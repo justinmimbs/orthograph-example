@@ -1,7 +1,7 @@
 {
   "name": "orthograph-example",
   "author": "Justin Mimbs <justin.mimbs@gmail.com>",
-  "description": "Example of an orthographic presentation for data in 3 dimensions",
+  "description": "Example of an orthographic presentation for data in three dimensions",
   "repository": {
     "type": "git",
     "url": "https://github.com/justinmimbs/orthograph-example.git"
