@@ -75,7 +75,6 @@ var fromString = function () {
     return fromString;
 }();
 
-
 // toUTC(Date) -> Date
 
 function toUTC(date) {
